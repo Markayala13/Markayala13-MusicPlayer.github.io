@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 575px){
+
+    body{
+       
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg, 
+        #C93B76 0%, 
+        #4D5562 25%, 
+        #212936 50%, 
+        #121826a6 75%, 
+        #E5E7EB 100%
+    );
+        grid-area: 
+        "header"
+        "main"
+        "footer";
+        grid-auto-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       height: 100vh;
+
+      
+      
+    }
+
+    .header{
+        grid-area: header;
+    }
+
+    .main{
+        grid-area: main;
+        background-color: #212936;
+        
+
+    }
+
+    .card{
+        
+        flex-direction: column;
+        
+        border: 1px solid white;
+        padding: 20px;
+        border-radius: 10px;
+    }
+img{
+    width: 100%;
+}
+    .card img{
+height: 300px;
+width: 100%;
+border-bottom-left-radius: 15px;
+
+    }
+
+    .card h1{
+        color:#e5e7eb;
+        text-align: center;
+        font-size: 16px;
+        padding-top: 16px;
+        padding-bottom: 4px;
+  
+    }
+
+    .card p{
+        text-align: center;
+        font-size: 12px;
+        padding-bottom: 34px;
+        color:#4D5562;
+
+    }
+
+    .currentTime{
+        font-size:16px;
+        color: #ffffff;
+        text-align: center;
+        
+        margin-bottom: 15px;
+    }
+   
+
+    .footer{
+        grid-area: footer;
+    }
+
+    .icon-containers{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+        gap: 20px;
+        
+    }
+
+    .left{
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+        
+            }
+        
+            .center{
+                height: 50px;
+                width: 50px;
+                margin-top: -10px;
+                cursor: pointer;
+        
+            }
+
+            .right{
+                height: 30px;
+                width: 30px;
+                cursor: pointer;
+            }
+
+            .right:hover{
+                color:blue
+            }
+}
