@@ -161,17 +161,20 @@ audios[5] =document.querySelector("#rola7");
 let tracks=[
     {
     title: "lost in the city light",
+    author: "Cosmo Sheldrake",
     cover: "assets/img/cover-1.png"
 
     },
 
     {
         title: "forest-lullaby",
+        author: "Lesfm",
         cover:"assets/img/cover-2.png"
     },
 
     {
- title: "Baila- Alfonso Lugo",
+ title: "Baila",
+ author:"Alfonso Lugo",
          cover:"assets/img/Untitled.jpeg"
     },
 
@@ -181,17 +184,20 @@ let tracks=[
     //         },
 
             {
-                title: "Come back home- Anna Caig",
+                title: "Come back home ",
+                author:"Anna Caig",
                         cover:"assets/img/come back home.jpeg"
                     },
 
                     {
-                        title: "Rigth now - Dan Darnell",
+                        title: "Rigth now",
+                        author:"Dan Darnell",
                                 cover:"assets/img/rightnow.jpeg"
                             },
 
                             {
-                                title: "Mas Alla- Vince Miranda",
+                                title: "Mas Alla",
+                                author:"Vince Miranda",
                                         cover:"assets/img/mas alla.jpeg"
                                     },
 
@@ -243,8 +249,10 @@ audios[currentIndex].currentTime = 0;
 
 const albumCover = document.querySelector(".card img");
 const songTitle = document.querySelector(".card h1");
+const authorSong = document.querySelector(".card p");
 albumCover.src = tracks[currentIndex].cover; 
 songTitle.textContent = tracks[currentIndex].title; 
+authorSong.textContent = tracks[currentIndex].author;
 
 audios[currentIndex].addEventListener('timeupdate', updateTime);
 
@@ -276,9 +284,10 @@ function forward(){
     audios[currentIndex].currentTime = 0;
     const albumCover = document.querySelector(".card img");
 const songTitle = document.querySelector(".card h1");
-
+const authorSong = document.querySelector(".card p");
 albumCover.src = tracks[currentIndex].cover; 
 songTitle.textContent = tracks[currentIndex].title; 
+authorSong.textContent = tracks[currentIndex].author;
     audios[currentIndex].addEventListener('timeupdate', updateTime);
 
 }
